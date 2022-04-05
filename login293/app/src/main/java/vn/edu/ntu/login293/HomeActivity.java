@@ -20,11 +20,11 @@ public class HomeActivity extends AppCompatActivity {
         tvdes = (TextView) findViewById(R.id.tv_des);
         tvmail = (TextView) findViewById(R.id.tv_mail);
 
-        setDatayExtras();
+        setDataByExtras();
 
     }
 
-    public void setDatayExtras()
+    public void setDataByExtras()
     {
         Intent intent = getIntent();
         String title = intent.getStringExtra(LoginActivity.TITLE);
@@ -34,7 +34,5 @@ public class HomeActivity extends AppCompatActivity {
         tvtitle.setText(title);
         tvdes.setText(des);
         tvmail.setText(mail);
-
-
     }
 }

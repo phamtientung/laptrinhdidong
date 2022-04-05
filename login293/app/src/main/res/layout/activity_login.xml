@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
     <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MÀN HÌNH ĐĂNG NHẬP "
+        android:layout_gravity="center"
+        />
+
+    <EditText
         android:hint="user name"
         android:id="@+id/edt_Title"
         android:layout_width="match_parent"
