@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btncacu;
     private TextView tv;
 
-    public static final String NUMBER = "NUMBER";
     public MainActivity()
     {
 
@@ -36,19 +35,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String sa = tv.getText().toString();
                 int a = Integer.parseInt(sa);
-                Float F13 = Float.valueOf((a * 13) / 100);
-                Float F15 = Float.valueOf((a * 15) / 100);
-                Float F18 = Float.valueOf((a * 18) / 100);
                 if (rb13.isChecked()) {
+                    Float F13 = Float.valueOf((a * 13) / 100);
                     tv.setText("Số tiền Tip nhân được là: " + F13);
                 }
                 else {
                         if (rb15.isChecked()) {
+                            Float F15 = Float.valueOf((a * 15) / 100);
                             tv.setText("Số tiền Tip nhân được là: " + F15);
                         }else {
-                        if (rb18.isChecked()) {
-                            tv.setText("Số tiền Tip nhân được là: " + F18);
-                        }
+                            if (rb18.isChecked()) {
+                                Float F18 = Float.valueOf((a * 18) / 100);
+                                tv.setText("Số tiền Tip nhân được là: " + F18);
+                            }
                         }
                 }
             }
