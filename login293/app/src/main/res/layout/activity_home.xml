@@ -9,9 +9,9 @@
     tools:context=".HomeActivity"
     >
     <TextView
-        android:text="tiêu đề"
+        android:text="màn hình chính"
         android:layout_gravity="center"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_title"
         android:textSize="20dp"
@@ -35,16 +35,21 @@
         android:textStyle="bold"
 
         />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn1"
-        android:text="Quiz1"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn2"
-        android:text="Quiz2"/>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Quiz2" />
+    </LinearLayout>
 
 </LinearLayout>

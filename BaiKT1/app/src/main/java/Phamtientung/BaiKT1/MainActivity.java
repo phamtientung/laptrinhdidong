@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EDIT1 = "EDIT1";
     public static final String EDIT2 = "EDIT2";
 
+
     public MainActivity()
     {
 

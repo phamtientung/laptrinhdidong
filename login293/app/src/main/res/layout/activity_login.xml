@@ -19,22 +19,29 @@
         android:id="@+id/edt_Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <EditText
         android:id="@+id/edt_des"
-        android:hint="password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
     <EditText
         android:id="@+id/edt_mail"
-        android:hint="mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="mail" />
+
     <Button
         android:id="@+id/btn_xn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="xác nhận!"
         android:layout_gravity="center"
+        android:onClick="ChuyenManHinh"
 
         />
+
 </LinearLayout>
