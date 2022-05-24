@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         databaseBook =  SQLiteDatabase.openOrCreateDatabase("/data/data/vn.edu.ntu.cau2_qlbaitho/Mybook.db", null);
         // ta che hàm sau lại, ở những lần chạy sau
         // vì ta ko muốn tạo csdl lại từ đầu
-        //TaoBangVaThemDuLieu();
+        TaoBangVaThemDuLieu();
         // themmoisach(10,"mang may tinh",50,10,"sach ve mang");
         // capnhat(2,"lập trình A đây rồi ", 100, 100, "sách quý");
         NapthovaolistView();
